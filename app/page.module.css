@@ -75,3 +75,52 @@
   height: 3rem;
 }
 
+
+/* Artist hero section */
+
+.ArtistsHeroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(52, 70, 126);
+}
+
+.ArtistsHeroSectionTextContent {
+  display: flex;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ArtistsHeroSectionTextContent h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .ArtistsHeroSection {
+    flex-direction: row;
+    width: 100%;
+    height: 100dvh;
+  }
+  .ArtistsHeroSectionTextContent {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .ArtistsImages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
