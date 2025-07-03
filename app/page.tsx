@@ -33,8 +33,10 @@ export default function Home() {
               En GenHuman no utilizamos la IA para generar las imagenes de
               nuestros personajes. Todo viene de la mano de nuestros artistas,
               dibujado con cariño y a mano para que tengas un diseño de calidad.
+              Aquí podrás ver a nuestros artistas destacados y saber más sobre ellos.
             </p>
           </div>
+          <div className={styles.SeparationLine}></div>
           <div className={styles.ArtistsHighlight}>
             <div className={styles.ArtistsImages}>
               <ArtistComponent

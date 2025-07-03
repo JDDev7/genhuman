@@ -17,6 +17,9 @@ function ArtistComponent({ name, image1, image2, image3 }: ArtistProps) {
             <img src={image2} alt="Artist Image 2" fetchPriority='low' loading='lazy' decoding='async' className={styles.ArtistImage}/>
             <img src={image3} alt="Artist Image 3" fetchPriority='low' loading='lazy' decoding='async' className={styles.ArtistImage}/>
         </div>
+        <div className={styles.AboutArtist}>
+          <button className={styles.ArtistButton}>Sobre {name}</button>
+        </div>
     </div>
   )
 }
