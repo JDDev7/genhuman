@@ -1,0 +1,33 @@
+.CharCreator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 360px;
+  height: 300px;
+  background-color: transparent;
+  color: white;
+}
+
+.CanvasImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .CharCreator {
+    display: flex;
+    width: 540px;
+    height: 450px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .CharCreator {
+    width: 720px;
+    height: 600px;
+  }
+}
