@@ -1,16 +1,27 @@
-import React from 'react'
-import styles from './charcreator.module.css'
+"use client";
+
+import React from "react";
+import exportAsImage from "@/utils/exportAsImage";
+import styles from "./charcreator.module.css";
+import CharCanvas from "../components/charcanvas/char-canvas";
 function CreatorPage() {
+  const exportRef = React.useRef(null);
+
   return (
     <div className={styles.Container}>
-      <div className={styles.CharCreator}>
+      {/* <div className={styles.CharCreator}>
         <p>Aqui va el creador de pjs</p>
+      </div> */}
+      <div ref={exportRef}>
+      <CharCanvas/>
       </div>
       <div className={styles.Controls}>
         <p>Aqui van los controles</p>
+        
       </div>
+      <button onClick={() => exportAsImage(exportRef.current, "image.png")}>Descargar Imagen</button>
     </div>
-  )
+  );
 }
 
-export default CreatorPage
+export default CreatorPage;
