@@ -1,0 +1,23 @@
+.Controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    background-color: rgb(62, 62, 156);
+    color: white;
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .Controls {
+        display: flex;
+        margin-top: 2rem;
+        width: 300px;
+        height: 300px;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+}
