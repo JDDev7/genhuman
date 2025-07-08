@@ -6,6 +6,7 @@ function CharControls() {
   const parts = useCharacterStore((state) => state.parts)
   const nextOption = useCharacterStore((state) => state.nextOption)
   const prevOption = useCharacterStore((state) => state.prevOption)
+  const randomize = useCharacterStore((state) => state.randomize)
   return (
           <div className={styles.Controls}>
               {parts.map((part) => (
@@ -32,6 +33,13 @@ function CharControls() {
           </div>
         </div>
       ))}
+              <button 
+          onClick={randomize}
+          className={styles.RandomizeButton}
+          aria-label="Randomizar todas las partes"
+        >
+          🎲 Todo Aleatorio
+        </button>
       </div>
   )
 }

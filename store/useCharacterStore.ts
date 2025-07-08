@@ -13,6 +13,7 @@ type CharacterState = {
   // Acciones
   nextOption: (partName: string) => void;
   prevOption: (partName: string) => void;
+  randomize: () => void;
   reset: () => void; // Opcional: para resetear
 };
 
@@ -73,6 +74,16 @@ export const useCharacterStore = create<CharacterState>((set) => ({
           return { ...part, currentIndex: prevIndex };
         }
         return part;
+      })
+    }));
+  },
+
+  randomize: () => {
+    set((state) => ({
+      parts: state.parts.map(part => {
+        // Genera un índice aleatorio para cada parte
+        const randomIndex = Math.floor(Math.random() * part.options.length);
+        return { ...part, currentIndex: randomIndex };
       })
     }));
   },
