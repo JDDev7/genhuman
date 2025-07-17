@@ -2,6 +2,7 @@
 "use client"
 import React from 'react'
 import styles from './artist-component.module.css'
+import { montserrat } from "@/lib/utils";
 interface ArtistProps {
     name: string
     image1: string
@@ -10,7 +11,7 @@ interface ArtistProps {
 }
 function ArtistComponent({ name, image1, image2, image3 }: ArtistProps) {
   return (
-    <div className={styles.ArtistContainer}>
+    <div className={`${styles.ArtistContainer} ${montserrat.className}`}>
         <h1>{name}</h1>
         <div className={styles.ArtistImageGrid}>
             <img src={image1} alt="Artist Image 1" fetchPriority='low' loading='lazy' decoding='async' className={styles.ArtistImage}/>
@@ -18,7 +19,7 @@ function ArtistComponent({ name, image1, image2, image3 }: ArtistProps) {
             <img src={image3} alt="Artist Image 3" fetchPriority='low' loading='lazy' decoding='async' className={styles.ArtistImage}/>
         </div>
         <div className={styles.AboutArtist}>
-          <button className={styles.ArtistButton}>Sobre {name}</button>
+          <button className={`${styles.ArtistButton} ${montserrat.className}`}>Sobre {name}</button>
         </div>
     </div>
   )
