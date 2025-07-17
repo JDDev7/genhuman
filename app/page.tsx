@@ -28,7 +28,7 @@ export default function Home() {
       <section className={styles.Container}>
         <div className={styles.ArtistsHeroSection}>
           <div className={styles.ArtistsHeroSectionTextContent}>
-            <h1>Nuestros Artistas</h1>
+            <h2>Nuestros Artistas</h2>
           </div>
           {/* <div className={styles.ArtistsHeroSectionTextContent}>
             <h2>Artistas humanos, arte humano, cero IA generativa</h2>
