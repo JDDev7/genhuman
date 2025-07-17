@@ -4,6 +4,7 @@ import styles from './navbar.module.css'
 import Link from 'next/link'
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { montserrat } from '@/lib/utils'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
 
 function Navbar() {
@@ -19,6 +20,11 @@ function toggleMenu() {
           
             <h1>GenHuman</h1>
             </div>
+        </div>
+        <div className={styles.navbarSearchContainer}>
+          <MagnifyingGlassIcon className={styles.navbarSearchIcon} />
+          <input type="text" className={styles.navbarSearchInput} placeholder="Buscar por artista" />
+          
         </div>
         <div className={styles.navbarMenuButton} onClick={toggleMenu}>
             {isOpen ? <XMarkIcon className={styles.navbarMenuIcon} /> : <Bars3BottomRightIcon className={styles.navbarMenuIcon} />}

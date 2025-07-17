@@ -28,6 +28,9 @@ export default function Home() {
       <section className={styles.Container}>
         <div className={styles.ArtistsHeroSection}>
           <div className={styles.ArtistsHeroSectionTextContent}>
+            <h1>Nuestros Artistas</h1>
+          </div>
+          {/* <div className={styles.ArtistsHeroSectionTextContent}>
             <h2>Artistas humanos, arte humano, cero IA generativa</h2>
             <p>
               En GenHuman no utilizamos la IA para generar las imagenes de
@@ -35,7 +38,7 @@ export default function Home() {
               dibujado con cariño y a mano para que tengas un diseño de calidad.
               Aquí podrás ver a nuestros artistas destacados y saber más sobre ellos.
             </p>
-          </div>
+          </div> */}
           <div className={styles.SeparationLine}></div>
           <div className={styles.ArtistsHighlight}>
             <div className={styles.ArtistsImages}>

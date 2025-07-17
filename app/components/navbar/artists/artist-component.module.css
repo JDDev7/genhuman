@@ -31,7 +31,7 @@
 }
 
 .ArtistButton {
-  background-color: rgb(62, 72, 209);
+  background-color: #C45A62;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -45,7 +45,7 @@
   .ArtistImageGrid {
     flex-direction: row;
     gap: 0.25rem;
-    width: 100%;
+    width: 80%;
   }
 
   .ArtistImage {

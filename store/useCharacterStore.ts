@@ -19,13 +19,16 @@ type CharacterState = {
 
 // Estado inicial de las partes
 const initialParts: CharacterPart[] = [
+  // {
+  //   artist: "Obaba Banana"
+  // },
   {
     name: "torso",
     options: ["torso1.png", "torso2.png"],
     currentIndex: 0
   },
   {
-    name: "cabesa",
+    name: "cabeza",
     options: ["cabesa1.png", "cabesa2.png"],
     currentIndex: 0
   },
@@ -41,6 +44,11 @@ const initialParts: CharacterPart[] = [
   },
   {
     name: "boca",
+    options: ["boca1.png", "boca2.png"],
+    currentIndex: 0
+  },
+    {
+    name: "traje",
     options: ["boca1.png", "boca2.png"],
     currentIndex: 0
   }

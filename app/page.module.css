@@ -13,7 +13,10 @@
   justify-content: center;
   width: 100%;
   height: 100dvh;
-  background-color: rgb(40, 43, 83);
+  background-image: url("/hero_bg.webp");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
 }
 
 .HeroSectionContent {
@@ -41,7 +44,7 @@
 }
 
 .HeroSection button {
-  background-color:rgb(62, 72, 209);
+  background-color:#C45A62;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -96,7 +99,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: rgb(52, 70, 126);
+  background-color: #457B9D;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -124,20 +127,22 @@
 
 
 @media (min-width: 1280px) {
-  .SeparationLine {
-    display: none;
-  }
 
   .ArtistsHeroSection {
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding-bottom: 2rem;
   }
-  .ArtistsHeroSectionTextContent {
+
+  .ArtistsHeroSectionTextContent h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  /* .ArtistsHeroSectionTextContent {
     flex-direction: column;
     width: 50%;
-  }
+  } */
 
   .ArtistsImages {
     display: flex;
